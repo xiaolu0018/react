@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --progress --open --port 9090",
-    "mock":"json-server --watch  build/generate.js ",
-    "mockdev":"concurrently \"npm run mock\"  \"npm run dev\""
+    "dev": "webpack-dev-server --progress --open",
+    "mock": "json-server --watch  build/generate.js ",
+    "mockdev": "concurrently \"npm run mock\"  \"npm run dev\""
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,7 @@
     "babel-loader": "^7.1.2",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
     "faker": "^4.1.0",

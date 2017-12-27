@@ -11,7 +11,7 @@ var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
 module.exports = {
     entry: {
         vendor:['react','react-dom'],
-        app:path.resolve(__dirname, './app/components/test1.jsx')
+        app:path.resolve(__dirname, './app/main.js')
     },
 
     output: {
@@ -46,7 +46,7 @@ module.exports = {
         hot: true,//是否热替换特性
         inline: true,//devserver两种模式inline和iframe
         contentBase: './build',//服务器从哪里提供内容
-
+		port:8080,
         proxy: {
             '/db': {
                 target: 'http://localhost:8080',

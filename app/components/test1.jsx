@@ -34,27 +34,27 @@ class Clock extends React.Component{
                 list:this.state.list
             })
             e.target.value=""
-            $.get('http://localhost:8080/db',function(data){
+            $.get('http://localhost:3000/customers',function(data){
                 console.log(data)
             })
-            $.ajax({
-                type:'post',
-                url:'http://localhost:8080/db',
-                contentType:"application/json",
-                data:JSON.stringify({
-                    "id": 100,
-                    "first_name": "lxl",
-                    "last_name": "xl",
-                    "phone": "34888-331-5610"
-                },),
-                success:function(data){
-                    console.log(data)
-                },
-                error:function(xhr){
-                    console.log(xhr)
-                }
-
-            })
+//          $.ajax({
+//              type:'post',
+//              url:'http://localhost:8080/db',
+//              contentType:"application/json",
+//              data:JSON.stringify({
+//                  "id": 100,
+//                  "first_name": "lxl",
+//                  "last_name": "xl",
+//                  "phone": "34888-331-5610"
+//              },),
+//              success:function(data){
+//                  console.log(data)
+//              },
+//              error:function(xhr){
+//                  console.log(xhr)
+//              }
+//
+//          })
         }
     }
     handleInput(e){
