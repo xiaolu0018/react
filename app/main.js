@@ -3,5 +3,5 @@
 // AppComponent();
 
 //练习题1
-import AppComponent from './components/react1.js'
+import AppComponent from './components/react2.js'
 AppComponent('hello lixl');
